@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     val questionsList = listOf(
         "Five out of eight are better odds than three out of five.",
-        "The sum of angles around a point in a circle in 350.",
+        "The sum of angles around a point in a circle is 350.",
         "The perimeter of a circle is known as the diameter.",
         "7000mm = 7km",
         "15% of 60 equals 9.",
