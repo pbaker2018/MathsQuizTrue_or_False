@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         correctAnswers.clear()
         youScoredTxt.text = " "
         resultsTxt.text = " "
+        resultCommentTxt.text = " "
         index = 0
         question = questionsList[index]
         questionTxt.text = question
@@ -51,8 +52,20 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity, "correct", Toast.LENGTH_SHORT).show()
             if (index == 9) {
                 questionTxt.text = " "
+                val score = correctAnswers.count()
+                if (score == 10) {
+                    resultCommentTxt.text = "Perfect Score!"
+                } else if (score >= 8) {
+                    resultCommentTxt.text = "Very good."
+                } else if (score >= 6) {
+                    resultCommentTxt.text = "Not bad."
+                } else if (score >= 4) {
+                    resultCommentTxt.text = "You can do better than that"
+                } else {
+                    resultCommentTxt.text = "Not good at all!."
+                }
                 youScoredTxt.text = "You scored:"
-                resultsTxt.text = "${correctAnswers.count()} out of 10"
+                resultsTxt.text = "$score out of 10."
             } else {
                 index += 1
                 question = questionsList[index]
@@ -62,8 +75,20 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity, "incorrect", Toast.LENGTH_SHORT).show()
             if (index == 9) {
                 questionTxt.text = " "
+                val score = correctAnswers.count()
+                if (score == 10) {
+                    resultCommentTxt.text = "Perfect Score!"
+                } else if (score >= 8) {
+                    resultCommentTxt.text = "Very good."
+                } else if (score >= 6) {
+                    resultCommentTxt.text = "Not bad."
+                } else if (score >= 4) {
+                    resultCommentTxt.text = "You can do better than that"
+                } else {
+                    resultCommentTxt.text = "Not good at all!."
+                }
                 youScoredTxt.text = "You scored:"
-                resultsTxt.text = "${correctAnswers.count()} out of 10"
+                resultsTxt.text = "$score out of 10."
             } else {
                 index += 1
                 question = questionsList[index]
@@ -83,8 +108,20 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity, "correct", Toast.LENGTH_SHORT).show()
                 if (index == 9) {
                     questionTxt.text = " "
+                    val score = correctAnswers.count()
+                    if (score == 10) {
+                        resultCommentTxt.text = "Perfect Score!"
+                    } else if (score >= 8) {
+                        resultCommentTxt.text = "Very good."
+                    } else if (score >= 6) {
+                        resultCommentTxt.text = "Not bad."
+                    } else if (score >= 4) {
+                        resultCommentTxt.text = "You can do better than that"
+                    } else {
+                        resultCommentTxt.text = "Not good at all!."
+                    }
                     youScoredTxt.text = "You scored:"
-                    resultsTxt.text = "${correctAnswers.count()} out of 10"
+                    resultsTxt.text = "$score out of 10."
                 } else {
                     index += 1
                     question = questionsList[index]
@@ -94,8 +131,20 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity, "incorrect", Toast.LENGTH_SHORT).show()
                 if (index == 9) {
                     questionTxt.text = " "
+                    val score = correctAnswers.count()
+                    if (score == 10) {
+                        resultCommentTxt.text = "Perfect Score!"
+                    } else if (score >= 8) {
+                        resultCommentTxt.text = "Very good."
+                    } else if (score >= 6) {
+                        resultCommentTxt.text = "Not bad."
+                    } else if (score >= 4) {
+                        resultCommentTxt.text = "You can do better than that"
+                    } else {
+                        resultCommentTxt.text = "Not good at all!."
+                    }
                     youScoredTxt.text = "You scored:"
-                    resultsTxt.text = "${correctAnswers.count()} out of 10"
+                    resultsTxt.text = "$score out of 10."
                 } else {
                     index += 1
                     question = questionsList[index]
@@ -108,6 +157,7 @@ class MainActivity : AppCompatActivity() {
             correctAnswers.clear()
             youScoredTxt.text = " "
             resultsTxt.text = " "
+            resultCommentTxt.text = " "
             index = 0
             question = questionsList[index]
             questionTxt.text = question
