@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Maths Quiz</string>
+    <string name="true_or_false">True or False</string>
+    <string name="maths_quiz">Maths Quiz</string>
+    <string name="start_again">Start Again</string>
+    <string name="begin">BEGIN!</string>
+    <string name="f_btn">FALSE</string>
+    <string name="t_btn">TRUE</string>
+</resources>
