@@ -16,9 +16,9 @@ Your score is given at the end.
 * The user can start again from the beginning by either clicking on 'BEGIN' or by clicking on 'START AGAIN.'
 
 
-## Screen Recording of App
+### Screen Recording of App
 
-Please see the link below to view my app in action, on youtube.
+Please see the link below to view my app in action, on Youtube.
 
 ```
 https://youtu.be/o2-ZbSLvTQI
